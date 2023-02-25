@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Orange Toolbox</string>
+    <string name="tab_text_1">Telecom</string>
+    <string name="tab_text_2">Réseaux</string>
+    <string name="tab_text_3">Mémos</string>
+
+</resources>
