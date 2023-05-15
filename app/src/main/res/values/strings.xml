@@ -4,4 +4,9 @@
     <string name="tab_text_2">Réseaux</string>
     <string name="tab_text_3">Mémos</string>
 
+    <string name="texte1">hello</string>
+    <string name="megohm_descr">image du megohm</string>
+
+
+
 </resources>

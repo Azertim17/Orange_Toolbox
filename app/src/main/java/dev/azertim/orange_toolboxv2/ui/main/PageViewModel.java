@@ -1,5 +1,11 @@
 package dev.azertim.orange_toolboxv2.ui.main;
 
+import static java.security.AccessController.getContext;
+
+import android.content.Intent;
+import android.view.View;
+import android.widget.Button;
+
 import androidx.arch.core.util.Function;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
@@ -13,7 +19,8 @@ public class PageViewModel extends ViewModel {
         @Override
         public String apply(Integer input) {
             if (input == 1) {
-                return "Contenu du premier onglet";
+
+
             } else if (input == 2) {
                 return "Contenu du deuxième onglet";
             } else if (input == 3 ) {
@@ -21,6 +28,7 @@ public class PageViewModel extends ViewModel {
             } else {
                 return "Hello world from section: " + input;
             }
+            return null;
         }
     });
 
