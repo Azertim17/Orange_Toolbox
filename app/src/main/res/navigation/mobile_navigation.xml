@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="dev.azertim.orange_toolbox.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_reseau"
+        android:name="dev.azertim.orange_toolbox.ui.reseau.ReseauFragment"
+        android:label="@string/menu_reseau"
+        tools:layout="@layout/fragment_reseau" />
+
+    <fragment
+        android:id="@+id/nav_telecom"
+        android:name="dev.azertim.orange_toolbox.ui.telecom.TelecomFragment"
+        android:label="@string/menu_Telecom"
+        tools:layout="@layout/fragment_telecom" />
+
+    <fragment
+        android:id="@+id/nav_memos"
+        android:name="dev.azertim.orange_toolbox.ui.memo.MemoFragment"
+        android:label="@string/menu_memos"
+        tools:layout="@layout/fragment_memos" />
+
+</navigation>

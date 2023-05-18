@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="temperatureTextView" type="id" />
+    <item name="weatherDescriptionTextView" type="id" />
+    <item name="longitudeTextView" type="id" />
+    <item name="latitudeTextView" type="id" />
+</resources>
