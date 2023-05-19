@@ -29,4 +29,19 @@
         android:label="@string/menu_memos"
         tools:layout="@layout/fragment_memos" />
 
+    <fragment
+        android:id="@+id/convertisseurFragment"
+        android:name="dev.azertim.orange_toolbox.ui.reseau.convertisseur.ConvertisseurFragment"
+        android:label="@string/outil_convertisseur"
+        tools:layout="@layout/fragment_convertisseur"/>
+
+    <fragment
+        android:id="@+id/calculatriceFragment"
+        android:name="dev.azertim.orange_toolbox.ui.reseau.calculatrice.CalculatriceFragment"
+        android:label="@string/outil_calculatrice"
+        tools:layout="@layout/fragment_calculatrice"/>
+
+
+
+
 </navigation>

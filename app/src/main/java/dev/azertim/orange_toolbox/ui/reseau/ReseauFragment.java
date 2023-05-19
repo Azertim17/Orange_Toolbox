@@ -1,5 +1,6 @@
 package dev.azertim.orange_toolbox.ui.reseau;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,9 +12,13 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.NavController;
+import androidx.navigation.NavOptions;
+import androidx.navigation.Navigation;
 
 import com.google.android.material.snackbar.Snackbar;
 
+import dev.azertim.orange_toolbox.MainActivity;
 import dev.azertim.orange_toolbox.R;
 import dev.azertim.orange_toolbox.databinding.FragmentReseauBinding;
 import dev.azertim.orange_toolbox.ui.reseau.calculatrice.CalculatriceFragment;
@@ -35,15 +40,8 @@ public class ReseauFragment extends Fragment {
         convertisseurLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Créer une instance du fragment
-                ConvertisseurFragment convertisseurFragment = new ConvertisseurFragment();
-
-                // Remplacer le fragment actuel par ConvertisseurFragment
-                FragmentManager fragmentManager = getParentFragmentManager();
-                fragmentManager.beginTransaction()
-                        .replace(R.id.nav_host_fragment_content_main, convertisseurFragment)
-                        .addToBackStack(null)
-                        .commit();
+                NavController navController = Navigation.findNavController((Activity) view.getContext(), R.id.nav_host_fragment_content_main);
+                navController.navigate(R.id.convertisseurFragment, null, new NavOptions.Builder().setLaunchSingleTop(true).build());
             }
         });
 
@@ -51,15 +49,8 @@ public class ReseauFragment extends Fragment {
         calculatriceLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Créer une instance du fragment
-                CalculatriceFragment calculatriceFragment = new CalculatriceFragment();
-
-                // Remplacer le fragment actuel par ConvertisseurFragment
-                FragmentManager fragmentManager = getParentFragmentManager();
-                fragmentManager.beginTransaction()
-                        .add(R.id.nav_host_fragment_content_main, calculatriceFragment)
-                        .addToBackStack(null)
-                        .commit();
+                NavController navController = Navigation.findNavController((Activity) view.getContext(), R.id.nav_host_fragment_content_main);
+                navController.navigate(R.id.calculatriceFragment, null, new NavOptions.Builder().setLaunchSingleTop(true).build());
             }
         });
 

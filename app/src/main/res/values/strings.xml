@@ -7,8 +7,16 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
+
+    <!-- Menus -->
     <string name="menu_home">Home</string>
     <string name="menu_reseau">Réseau</string>
     <string name="menu_Telecom">Télécoms</string>
     <string name="menu_memos">Mémos</string>
+
+    <!-- Outils -->
+    <string name="outil_convertisseur">Convertisseur</string>
+    <string name="outil_calculatrice">Calculatrice</string>
+
+
 </resources>
