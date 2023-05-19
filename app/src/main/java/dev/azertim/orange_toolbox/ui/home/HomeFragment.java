@@ -1,45 +1,33 @@
 package dev.azertim.orange_toolbox.ui.home;
 
-import android.Manifest;
-import android.annotation.SuppressLint;
-import android.content.Context;
-import android.content.pm.PackageManager;
-import android.location.Location;
-import android.location.LocationListener;
-import android.location.LocationManager;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
+
+import com.bumptech.glide.Glide;
 
 import dev.azertim.orange_toolbox.R;
 import dev.azertim.orange_toolbox.databinding.FragmentHomeBinding;
 
-public class HomeFragment extends Fragment {
+import java.text.DecimalFormat;
 
-    public static final int REQUEST_LOCATION_PERMISSION = 1;
+public class HomeFragment extends Fragment implements WeatherData.WeatherDataCallback {
+
     private FragmentHomeBinding binding;
     private TextView temperatureTextView;
-    private TextView weatherDescriptionTextView;
-    private TextView latitudeTextView;
-    private TextView longitudeTextView;
-    private TextView weather;
+    private TextView weatherConditionTextView;
+    private TextView cityTextView;
+    private ImageView weatherIconImageView;
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
-        HomeViewModel homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
 
+
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
@@ -56,26 +44,46 @@ public class HomeFragment extends Fragment {
         image4.setImageResource(R.drawable.home);
         image5.setImageResource(R.drawable.home);
 
+        WeatherData weatherData = new WeatherData();
+        temperatureTextView = root.findViewById(R.id.temperatureTextView);
+        weatherConditionTextView = root.findViewById(R.id.weatherConditionTextView);
+        weatherIconImageView = root.findViewById(R.id.weatherIconImageView);
+        cityTextView = root.findViewById(R.id.cityTextView);
+
+        // Fetch the weather data and update the UI
+        weatherData.fetchWeatherData(this, requireContext());
+
         return root;
-    }
-
-    @SuppressLint("ResourceType")
-    @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-
-        temperatureTextView = view.findViewById(R.id.temperatureTextView);
-        weatherDescriptionTextView = view.findViewById(R.id.weatherDescriptionTextView);
-        latitudeTextView = view.findViewById(R.id.latitudeTextView);
-        longitudeTextView = view.findViewById(R.id.longitudeTextView);
-        weather = view.findViewById(R.id.weather_text);
-
-        weather.setText(R.id.temperatureTextView);
     }
 
     @Override
     public void onDestroyView() {
         super.onDestroyView();
         binding = null;
+    }
+
+    @Override
+    public void onWeatherDataFetched(double temperature, String weather, String weatherIcon, String city) {
+        // Convert temperature from Kelvin to Celsius
+        double temperatureCelsius = temperature - 273.15;
+
+        // Round the temperature to 1 decimal place
+        DecimalFormat decimalFormat = new DecimalFormat("#.#");
+        String roundedTemperature = decimalFormat.format(temperatureCelsius);
+
+        // Update the UI with the rounded temperature in Celsius
+        temperatureTextView.setText(roundedTemperature + "°C");
+        weatherConditionTextView.setText(weather);
+        cityTextView.setText(city);
+        loadWeatherIcon(weatherIcon);
+    }
+
+
+    private void loadWeatherIcon(String weatherIcon) {
+        String iconUrl = "https://openweathermap.org/img/w/" + weatherIcon + ".png";
+
+        Glide.with(requireContext())
+                .load(iconUrl)
+                .into(weatherIconImageView);
     }
 }

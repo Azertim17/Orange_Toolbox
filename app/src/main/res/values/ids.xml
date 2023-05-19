@@ -4,4 +4,11 @@
     <item name="weatherDescriptionTextView" type="id" />
     <item name="longitudeTextView" type="id" />
     <item name="latitudeTextView" type="id" />
+    <item name="networkAddressEditText" type="id" />
+    <item name="calculateButton" type="id" />
+    <item name="maskTextView" type="id" />
+    <item name="invertedMaskTextView" type="id" />
+    <item name="firstAddressTextView" type="id" />
+    <item name="lastAddressTextView" type="id" />
+    <item name="hostCountTextView" type="id" />
 </resources>

@@ -6,14 +6,9 @@ import androidx.lifecycle.ViewModel;
 
 public class ReseauViewModel extends ViewModel {
 
-    private final MutableLiveData<String> mText;
 
     public ReseauViewModel() {
-        mText = new MutableLiveData<>();
-        mText.setValue("Ici prochainement des outils Réseaux");
+
     }
 
-    public LiveData<String> getText() {
-        return mText;
-    }
 }

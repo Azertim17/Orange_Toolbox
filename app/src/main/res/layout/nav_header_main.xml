@@ -17,7 +17,7 @@
         android:layout_height="73dp"
         android:contentDescription="@string/nav_header_desc"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        app:srcCompat="@mipmap/orange" />
+        app:srcCompat="@mipmap/app_logo" />
 
     <TextView
         android:layout_width="match_parent"
