@@ -73,10 +73,10 @@ public class CalculatriceFragment extends Fragment {
             int mask = (0xFFFFFFFF << (32 - maskBits)) & 0xFFFFFFFF;
             int invertedMask = ~mask & 0xFFFFFFFF;
 
-            int firstAddress = address & mask;
-            int lastAddress = firstAddress | ~mask;
+            int firstAddress = (address & mask) + 1;
+            int lastAddress = (address | ~mask) - 1;
 
-            int hostCount = (lastAddress - firstAddress - 1);
+            int hostCount = lastAddress - firstAddress + 1;
 
             tvSubnetMask.setText(intToIpAddress(mask));
             tvInvertedMask.setText(intToIpAddress(invertedMask));
