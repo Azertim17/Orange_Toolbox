@@ -1,0 +1,19 @@
+    show version : Affiche les informations sur le matériel et le logiciel du routeur, y compris le modèle, la version du logiciel et les modules installés.
+
+    show interfaces : Affiche les détails des interfaces du routeur, notamment leur état, leur adresse IP, leur MTU et les statistiques d'erreurs.
+
+    show ip interface brief : Affiche un résumé des interfaces IP du routeur, y compris leur adresse IP, leur état et leur protocole de routage.
+
+    show ip route : Affiche la table de routage IP du routeur, indiquant les réseaux accessibles et les prochains sauts.
+
+    show arp : Affiche la table ARP du routeur, qui associe les adresses IP aux adresses MAC des périphériques voisins.
+
+    show running-config : Affiche la configuration en cours du routeur, montrant les commandes de configuration actuellement appliquées.
+
+    show startup-config : Affiche la configuration sauvegardée dans la mémoire de démarrage du routeur, montrant les commandes de configuration qui seront chargées au redémarrage.
+
+    show log : Affiche les messages de journalisation du routeur, tels que les événements système, les erreurs et les avertissements.
+
+    show access-lists : Affiche les listes d'accès configurées sur le routeur, montrant les règles de filtrage du trafic.
+
+    show sessions : Affiche les sessions actives sur le routeur, montrant les connexions établies avec d'autres périphériques.

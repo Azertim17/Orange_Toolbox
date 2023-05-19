@@ -1,4 +1,4 @@
-package dev.azertim.orange_toolbox.ui.reseau.cisco;
+package dev.azertim.orange_toolbox.ui.reseau.oneaccess;
 
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -21,12 +21,11 @@ import java.util.List;
 
 import dev.azertim.orange_toolbox.R;
 
-public class CiscoCommandsFragment extends Fragment {
-
+public class OneaccessCommandsFragment extends Fragment {
     private LinearLayout commandContainer;
     private LinearLayout descriptionContainer;
 
-    public CiscoCommandsFragment() {
+    public OneaccessCommandsFragment() {
         // Required empty public constructor
     }
 
@@ -34,7 +33,7 @@ public class CiscoCommandsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cisco_commands, container, false);
+        return inflater.inflate(R.layout.fragment_oneaccess_commands, container, false);
     }
 
     @Override
@@ -43,9 +42,9 @@ public class CiscoCommandsFragment extends Fragment {
 
         commandContainer = view.findViewById(R.id.commandContainer);
 
-        List<String[]> ciscoCommands = getCiscoCommands();
-        for (String[] command : ciscoCommands) {
-            View commandView = LayoutInflater.from(requireContext()).inflate(R.layout.item_cisco_command, commandContainer, false);
+        List<String[]> oneaccessCommands = getOneaccessCommands();
+        for (String[] command : oneaccessCommands) {
+            View commandView = LayoutInflater.from(requireContext()).inflate(R.layout.item_oneaccess_command, commandContainer, false);
 
             TextView titleTextView = commandView.findViewById(R.id.commandTitleTextView);
             TextView descriptionTextView = commandView.findViewById(R.id.commandDescriptionTextView);
@@ -60,11 +59,11 @@ public class CiscoCommandsFragment extends Fragment {
 
 
 
-    private List<String[]> getCiscoCommands() {
+    private List<String[]> getOneaccessCommands() {
         List<String[]> commands = new ArrayList<>();
 
         Resources resources = getResources();
-        InputStream inputStream = resources.openRawResource(R.raw.cisco_commands);
+        InputStream inputStream = resources.openRawResource(R.raw.oneaccess_commands);
 
         try {
             BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));

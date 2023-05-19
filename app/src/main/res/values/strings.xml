@@ -16,9 +16,9 @@
 
     <!-- Outils -->
     <string name="outil_convertisseur">Convertisseur</string>
-    <string name="outil_calculatrice">Calculatrice</string>
-    <string name="outil_cisco">Calculatrice</string>
-    <string name="outil_oneAccess">Calculatrice</string>
+    <string name="outil_calculatrice">Calculatrice CIDR</string>
+    <string name="outil_cisco">Commandes Cisco</string>
+    <string name="outil_oneAccess">Commandes OneAccess</string>
 
 
 </resources>
