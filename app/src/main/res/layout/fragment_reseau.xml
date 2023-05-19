@@ -85,7 +85,7 @@
                 android:layout_marginRight="45dp"
                 android:layout_weight="10"
                 android:scaleType="fitCenter"
-                android:src="@drawable/fleches"
+                android:src="@drawable/cisco_logo"
                 app:tint="?attr/iconTintColor" />
 
             <TextView
@@ -112,7 +112,7 @@
                 android:layout_marginRight="45dp"
                 android:layout_weight="10"
                 android:scaleType="fitCenter"
-                android:src="@drawable/fleches"
+                android:src="@drawable/oneaccess_logo"
                 app:tint="?attr/iconTintColor"/>
 
             <TextView
