@@ -29,6 +29,9 @@
         android:label="@string/menu_memos"
         tools:layout="@layout/fragment_memos" />
 
+
+    <!--  Réseau   -->
+
     <fragment
         android:id="@+id/convertisseurFragment"
         android:name="dev.azertim.orange_toolbox.ui.reseau.convertisseur.ConvertisseurFragment"
@@ -42,6 +45,25 @@
         tools:layout="@layout/fragment_calculatrice"/>
 
 
+    <fragment
+        android:id="@+id/ciscoFragment"
+        android:name=""
+        android:label="@string/outil_cisco"
+        tools:layout="@layout/fragment_calculatrice"/>
+
+    <fragment
+        android:id="@+id/oneAccessFragment"
+        android:name=""
+        android:label="@string/outil_oneAccess"
+        tools:layout="@layout/fragment_calculatrice"/>
+
+
+
+
+
+
+    <!--  Telecom   -->
+    <!--  Memos   -->
 
 
 </navigation>

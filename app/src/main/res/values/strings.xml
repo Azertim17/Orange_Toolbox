@@ -17,6 +17,8 @@
     <!-- Outils -->
     <string name="outil_convertisseur">Convertisseur</string>
     <string name="outil_calculatrice">Calculatrice</string>
+    <string name="outil_cisco">Calculatrice</string>
+    <string name="outil_oneAccess">Calculatrice</string>
 
 
 </resources>
