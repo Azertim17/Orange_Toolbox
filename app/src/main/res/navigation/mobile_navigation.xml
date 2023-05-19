@@ -44,21 +44,17 @@
         android:label="@string/outil_calculatrice"
         tools:layout="@layout/fragment_calculatrice"/>
 
-
     <fragment
         android:id="@+id/ciscoFragment"
-        android:name=""
+        android:name="dev.azertim.orange_toolbox.ui.reseau.cisco.CiscoCommandsFragment"
         android:label="@string/outil_cisco"
-        tools:layout="@layout/fragment_calculatrice"/>
+        tools:layout="@layout/fragment_cisco_commands"/>
 
     <fragment
         android:id="@+id/oneAccessFragment"
-        android:name=""
+        android:name="dev.azertim.orange_toolbox.ui.reseau.oneaccess.OneAccessFragment"
         android:label="@string/outil_oneAccess"
-        tools:layout="@layout/fragment_calculatrice"/>
-
-
-
+        tools:layout="@layout/fragment_oneaccess"/>
 
 
 

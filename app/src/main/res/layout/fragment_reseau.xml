@@ -78,7 +78,6 @@
             android:weightSum="100">
 
             <ImageView
-                android:id="@+id/cisco_icon"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/list_height"
                 android:layout_marginLeft="@dimen/marging_left_icons"
@@ -98,14 +97,13 @@
 
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/oneaccess_icon"
+            android:id="@+id/oneaccess"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:weightSum="100">
 
             <ImageView
-                android:id="@+id/oneaccess"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/list_height"
                 android:layout_marginLeft="@dimen/marging_left_icons"

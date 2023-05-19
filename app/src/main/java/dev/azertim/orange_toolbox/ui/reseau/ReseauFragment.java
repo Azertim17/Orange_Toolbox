@@ -36,6 +36,8 @@ public class ReseauFragment extends Fragment {
         binding = FragmentReseauBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
+
+
         LinearLayout convertisseurLayout = root.findViewById(R.id.convertisseur);
         convertisseurLayout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,6 +57,14 @@ public class ReseauFragment extends Fragment {
         });
 
 
+        LinearLayout ciscoLayout = root.findViewById(R.id.cisco);
+        ciscoLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavController navController = Navigation.findNavController((Activity) view.getContext(), R.id.nav_host_fragment_content_main);
+                navController.navigate(R.id.ciscoFragment, null, new NavOptions.Builder().setLaunchSingleTop(true).build());
+            }
+        });
 
 
 
