@@ -20,5 +20,8 @@
     <string name="outil_cisco">Commandes Cisco</string>
     <string name="outil_oneAccess">Commandes OneAccess</string>
 
+    <string name="outil_fibreatt">Calcul Atténuation Fibre</string>
+    <string name="outil_cuivreatt">Calcul Atténuation Cuivre</string>
+    <string name="outil_megohm">Mesures Mégohmètre</string>
 
 </resources>

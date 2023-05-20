@@ -57,8 +57,25 @@
         tools:layout="@layout/fragment_oneaccess"/>
 
 
-
     <!--  Telecom   -->
+    <fragment
+        android:id="@+id/attenuationfibreFragment"
+        android:name="dev.azertim.orange_toolbox.ui.telecom.attenuationfibre.AttenuationFibreFragment"
+        android:label="@string/outil_oneAccess"
+        tools:layout="@layout/fragment_oneaccess"/>
+
+    <fragment
+        android:id="@+id/attenuationcuivreFragment"
+        android:name="dev.azertim.orange_toolbox.ui.telecom.attenuationcuivre.AttenuationCuivreFragment"
+        android:label="@string/outil_cuivreatt"
+        tools:layout="@layout/fragment_attenuation_cuivre"/>
+
+    <fragment
+        android:id="@+id/megohmFragment"
+        android:name="dev.azertim.orange_toolbox.ui.telecom.megohm.MegohmFragment"
+        android:label="@string/outil_megohm"
+        tools:layout="@layout/fragment_megohm"/>
+
     <!--  Memos   -->
 
 

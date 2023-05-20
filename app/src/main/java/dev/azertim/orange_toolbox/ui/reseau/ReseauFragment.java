@@ -30,8 +30,6 @@ public class ReseauFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        ReseauViewModel galleryViewModel =
-                new ViewModelProvider(this).get(ReseauViewModel.class);
 
         binding = FragmentReseauBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
