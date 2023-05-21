@@ -10,5 +10,6 @@
     <color name="Orange">#fd7905</color>
     <color name="Grey">#181a1b</color>
     <color name="Blue_weather">#007ba5</color>
-    <color name="divider_color">#CCCCCC</color>
+    <color name="Color_cell_rdeg">#6f6f6f</color>
+
 </resources>

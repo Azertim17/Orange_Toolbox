@@ -37,7 +37,7 @@
                 android:layout_weight="80"
                 android:gravity="left|center"
                 android:paddingLeft="30dp"
-                android:text="Atténuation Fibre"/>
+                android:text="@string/outil_fibreatt"/>
 
         </LinearLayout>
 
@@ -65,7 +65,7 @@
                 android:layout_weight="80"
                 android:gravity="left|center"
                 android:paddingLeft="30dp"
-                android:text="Atténuation Cuivre"
+                android:text="@string/outil_cuivreatt"
                 />
 
         </LinearLayout>
@@ -93,11 +93,11 @@
                 android:layout_weight="80"
                 android:gravity="left|center"
                 android:paddingLeft="30dp"
-                android:text="Mesures Mégohmmètre"/>
+                android:text="@string/outil_megohm"/>
 
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/oneaccess"
+            android:id="@+id/trouverpaireLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -110,7 +110,31 @@
                 android:layout_marginRight="45dp"
                 android:layout_weight="10"
                 android:scaleType="fitCenter"
-                android:src="@drawable/oneaccess_logo"
+                android:src="@drawable/couleurs" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/list_height"
+                android:layout_weight="80"
+                android:gravity="left|center"
+                android:paddingLeft="30dp"
+                android:text="@string/outil_trouverpaire"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/rdegLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/list_height"
+                android:layout_marginLeft="@dimen/marging_left_icons"
+                android:layout_marginRight="45dp"
+                android:layout_weight="10"
+                android:scaleType="fitCenter"
+                android:src="@drawable/grid"
                 app:tint="?attr/iconTintColor"/>
 
             <TextView
@@ -119,11 +143,9 @@
                 android:layout_weight="80"
                 android:gravity="left|center"
                 android:paddingLeft="30dp"
-                android:text="Commandes Routeur OneAccess"/>
+                android:text="@string/outil_rdeg"
+                app:tint="?attr/iconTintColor"/>
         </LinearLayout>
-
-
-
 
 
 

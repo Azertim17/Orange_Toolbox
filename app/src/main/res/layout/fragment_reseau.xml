@@ -106,12 +106,12 @@
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="@dimen/list_height"
-                android:layout_marginLeft="@dimen/marging_left_icons"
+                android:layout_marginLeft="12dp"
                 android:layout_marginRight="45dp"
-                android:layout_weight="10"
+                android:layout_weight="17"
                 android:scaleType="fitCenter"
                 android:src="@drawable/oneaccess_logo"
-                app:tint="?attr/iconTintColor"/>
+                app:tint="?attr/iconTintColor" />
 
             <TextView
                 android:layout_width="0dp"

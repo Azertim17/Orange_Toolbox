@@ -76,6 +76,18 @@
         android:label="@string/outil_megohm"
         tools:layout="@layout/fragment_megohm"/>
 
+    <fragment
+        android:id="@+id/trouverpaireFragment"
+        android:name="dev.azertim.orange_toolbox.ui.telecom.trouverpaire.TrouverPaireFragment"
+        android:label="@string/outil_trouverpaire"
+        tools:layout="@layout/fragment_trouverpaire"/>
+
+    <fragment
+        android:id="@+id/rdegFragment"
+        android:name="dev.azertim.orange_toolbox.ui.telecom.rdeg.RdegFragment"
+        android:label="@string/outil_rdeg"
+        tools:layout="@layout/fragment_rdeg"/>
+
     <!--  Memos   -->
 
 

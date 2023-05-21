@@ -23,5 +23,8 @@
     <string name="outil_fibreatt">Calcul Atténuation Fibre</string>
     <string name="outil_cuivreatt">Calcul Atténuation Cuivre</string>
     <string name="outil_megohm">Mesures Mégohmètre</string>
+    <string name="outil_trouverpaire">Retrouver Paire Cuivre</string>
+    <string name="outil_rdeg">Retrouver Paire Rdeg</string>
+
 
 </resources>

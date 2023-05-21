@@ -11,4 +11,8 @@
     <dimen name="marging_left_icons">25dp</dimen>
     <dimen name="text_spacing">8dp</dimen>
 
+
+    <dimen name="rdeg_cell_size">28dp</dimen>
+    <dimen name="rdeg_cell_margin">5dp</dimen>
+
 </resources>

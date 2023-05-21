@@ -67,9 +67,30 @@ public class TelecomFragment extends Fragment {
             }
         });
 
+//        RETROUVER PAIRE CABLE
+//        Récupère le layout retrouver paire et lui associe une action onclick
+        LinearLayout paireLayout = root.findViewById(R.id.trouverpaireLayout);
+        paireLayout.setOnClickListener(new View.OnClickListener() {
+            // Met a jour le fragment main avec la vue de la page trouver paires
+            @Override
+            public void onClick(View view) {
+                NavController navController = Navigation.findNavController((Activity) view.getContext(), R.id.nav_host_fragment_content_main);
+                navController.navigate(R.id.trouverpaireFragment, null, new NavOptions.Builder().setLaunchSingleTop(true).build());
+            }
+        });
 
 
-
+//        RETROUVER PAIRE RDEG
+//        Récupère le layout rdeg et lui associe une action onclick
+        LinearLayout rdegLayout = root.findViewById(R.id.rdegLayout);
+        rdegLayout.setOnClickListener(new View.OnClickListener() {
+            // Met a jour le fragment main avec la vue de la page rdegFragment
+            @Override
+            public void onClick(View view) {
+                NavController navController = Navigation.findNavController((Activity) view.getContext(), R.id.nav_host_fragment_content_main);
+                navController.navigate(R.id.rdegFragment, null, new NavOptions.Builder().setLaunchSingleTop(true).build());
+            }
+        });
 
 
         return root;
