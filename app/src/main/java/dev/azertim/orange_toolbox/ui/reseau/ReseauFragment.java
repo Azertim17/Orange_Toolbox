@@ -6,23 +6,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.NavController;
 import androidx.navigation.NavOptions;
 import androidx.navigation.Navigation;
 
-import com.google.android.material.snackbar.Snackbar;
-
-import dev.azertim.orange_toolbox.MainActivity;
 import dev.azertim.orange_toolbox.R;
 import dev.azertim.orange_toolbox.databinding.FragmentReseauBinding;
-import dev.azertim.orange_toolbox.ui.reseau.calculatrice.CalculatriceFragment;
-import dev.azertim.orange_toolbox.ui.reseau.convertisseur.ConvertisseurFragment;
 
 public class ReseauFragment extends Fragment {
 
@@ -36,7 +28,7 @@ public class ReseauFragment extends Fragment {
 
 //      CONVERTISSEUR
 //      Récupère le layout convertisseur et lui associe une action onclick
-        LinearLayout convertisseurLayout = root.findViewById(R.id.convertisseur);
+        LinearLayout convertisseurLayout = root.findViewById(R.id.convertisseurLayout);
         convertisseurLayout.setOnClickListener(new View.OnClickListener() {
 //          Met a jour le fragment main avec la vue du convertisseur
             @Override
@@ -48,7 +40,7 @@ public class ReseauFragment extends Fragment {
 
 //      CALCULATRICE CIDR
 //      Récupère le layout calculatrice et lui associe une action onclick
-        LinearLayout calculatriceLayout = root.findViewById(R.id.calculatricecidr);
+        LinearLayout calculatriceLayout = root.findViewById(R.id.calculatricecidrLayout);
         calculatriceLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -60,7 +52,7 @@ public class ReseauFragment extends Fragment {
 
 //      COMMANDES CISCO
 //      Récupère le layout cisco et lui associe une action onclick
-        LinearLayout ciscoLayout = root.findViewById(R.id.cisco);
+        LinearLayout ciscoLayout = root.findViewById(R.id.ciscoLayout);
         ciscoLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -72,7 +64,7 @@ public class ReseauFragment extends Fragment {
 
 //      COMMANDES ONEACCESS
 //      Récupère le layout oneaccess et lui associe une action onclick
-        LinearLayout oneaccessLayout = root.findViewById(R.id.oneaccess);
+        LinearLayout oneaccessLayout = root.findViewById(R.id.oneaccessLayout);
         oneaccessLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

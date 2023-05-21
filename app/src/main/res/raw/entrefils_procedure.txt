@@ -1,0 +1,19 @@
+<center>
+<p><b>Raccorder chaque broche sur un fil</b></p>
+</center>
+-----
+<center>
+<p><b>Vérification absence de Boucle</b></p>
+<p>Mettre le Mégohmmètre sur le mode résistance <b>"Ω"</b></p>
+<p>Résultat Attendu : Si pas de boucle sur la liaison, l'appareil doit afficher 100 kΩ</p>
+</center>
+-----
+<center>
+<p><b>Vérification balise DTI</b></p>
+<p>Mettre le Mégohmmètre sur le mode capacité <b>"nF"</b></p>
+<p>Résultat Attendu : Si une balise DTI est présente, l'appareil doit afficher environ 1900 nF, 35 km environ</p>
+</center>
+-----
+<center>
+<p>Fin des mesures, si tout est ok vous pouvez continuer.</p>
+</center>

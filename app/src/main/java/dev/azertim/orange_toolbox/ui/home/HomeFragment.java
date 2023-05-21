@@ -17,7 +17,8 @@ import dev.azertim.orange_toolbox.databinding.FragmentHomeBinding;
 
 import java.text.DecimalFormat;
 
-public class HomeFragment extends Fragment implements WeatherData.WeatherDataCallback {
+public class
+HomeFragment extends Fragment implements WeatherData.WeatherDataCallback {
 
     private FragmentHomeBinding binding;
     private TextView temperatureTextView;

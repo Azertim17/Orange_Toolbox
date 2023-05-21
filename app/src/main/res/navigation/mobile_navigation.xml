@@ -90,5 +90,29 @@
 
     <!--  Memos   -->
 
+    <fragment
+        android:id="@+id/cuivrecolorFragment"
+        android:name="dev.azertim.orange_toolbox.ui.memo.couleurscuivre.CouleursCuivreMemoFragment"
+        android:label="@string/outil_memocuivre"
+        tools:layout="@layout/fragment_couleurs_cuivre"/>
+
 
 </navigation>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

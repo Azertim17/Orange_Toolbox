@@ -69,7 +69,8 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:gravity="center_horizontal"
-            tools:ignore="WebViewLayout" />
+            tools:ignore="WebViewLayout"
+            android:background="?attr/colorPrimary"/>
 
         <LinearLayout
             android:id="@+id/linearButtons"

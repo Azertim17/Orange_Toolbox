@@ -25,7 +25,7 @@
                 android:layout_width="0dp"
                 android:layout_height="@dimen/list_height"
                 android:layout_weight="10"
-                android:src="@drawable/cable"
+                android:src="@drawable/fibre"
                 android:layout_marginRight="45dp"
                 android:layout_marginLeft="@dimen/marging_left_icons"
                 android:scaleType="fitCenter"

@@ -26,5 +26,9 @@
     <string name="outil_trouverpaire">Retrouver Paire Cuivre</string>
     <string name="outil_rdeg">Retrouver Paire Rdeg</string>
 
+    <string name="outil_memocuivre">Mémo Couleurs Cuivre</string>
+    <string name="outil_memofibre">Mémo Couleurs Fibre</string>
+
+
 
 </resources>
