@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Orange Toolbox</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Orange Toolbox</string>
+    <string name="nav_header_subtitle">tim.mazzolini@orange.fr</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_apropos">À Propos</string>
+
+
+    <!-- Menus -->
+    <string name="menu_home">Home</string>
+    <string name="menu_reseau">Réseau</string>
+    <string name="menu_Telecom">Télécoms</string>
+    <string name="menu_memos">Mémos</string>
+
+    <!-- Outils -->
+    <string name="outil_convertisseur">Convertisseur</string>
+    <string name="outil_calculatrice">Calculatrice CIDR</string>
+    <string name="outil_cisco">Commandes Cisco</string>
+    <string name="outil_oneAccess">Commandes OneAccess</string>
+
+    <string name="outil_fibreatt">Calcul Atténuation Fibre</string>
+    <string name="outil_cuivreatt">Calcul Atténuation Cuivre</string>
+    <string name="outil_megohm">Mesures Mégohmètre</string>
+    <string name="outil_trouverpaire">Retrouver Paire Cuivre</string>
+    <string name="outil_rdeg">Retrouver Paire Rdeg</string>
+
+    <string name="outil_memocuivre">Mémo Couleurs Cuivre</string>
+    <string name="outil_memofibre">Mémo Couleurs Fibre</string>
+
+
+    <!-- A Propos -->
+    <string name="auteur">Tim MAZZOLINI</string>
+    <string name="version">2.0.0</string>
+    <string name="societe">Orange SA</string>
+    <string name="baptiste">Baptiste Tarte</string>
+
+    <string name="signature">© Tim.M 2022</string>
+
+
+</resources>

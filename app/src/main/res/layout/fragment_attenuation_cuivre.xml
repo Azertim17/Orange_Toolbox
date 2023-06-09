@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Renseingez les longueurs de cables en km"
+        android:textSize="17dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/etLength0_4mm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Longueur (0.4 mm)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/etLength0_5mm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Longueur (0.5 mm)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/etLength0_6mm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Longueur (0.6 mm)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/etLength0_8mm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Longueur (0.8 mm)"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+</LinearLayout>

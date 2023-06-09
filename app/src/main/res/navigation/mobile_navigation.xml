@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="dev.azertim.orange_toolbox.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_reseau"
+        android:name="dev.azertim.orange_toolbox.ui.reseau.ReseauFragment"
+        android:label="@string/menu_reseau"
+        tools:layout="@layout/fragment_reseau" />
+
+    <fragment
+        android:id="@+id/nav_telecom"
+        android:name="dev.azertim.orange_toolbox.ui.telecom.TelecomFragment"
+        android:label="@string/menu_Telecom"
+        tools:layout="@layout/fragment_telecom" />
+
+    <fragment
+        android:id="@+id/nav_memos"
+        android:name="dev.azertim.orange_toolbox.ui.memo.MemoFragment"
+        android:label="@string/menu_memos"
+        tools:layout="@layout/fragment_memos" />
+
+
+    <!--  Réseau   -->
+
+    <fragment
+        android:id="@+id/convertisseurFragment"
+        android:name="dev.azertim.orange_toolbox.ui.reseau.convertisseur.ConvertisseurFragment"
+        android:label="@string/outil_convertisseur"
+        tools:layout="@layout/fragment_convertisseur"/>
+
+    <fragment
+        android:id="@+id/calculatriceFragment"
+        android:name="dev.azertim.orange_toolbox.ui.reseau.calculatrice.CalculatriceFragment"
+        android:label="@string/outil_calculatrice"
+        tools:layout="@layout/fragment_calculatrice"/>
+
+    <fragment
+        android:id="@+id/ciscoFragment"
+        android:name="dev.azertim.orange_toolbox.ui.reseau.cisco.CiscoCommandsFragment"
+        android:label="@string/outil_cisco"
+        tools:layout="@layout/fragment_cisco_commands"/>
+
+    <fragment
+        android:id="@+id/oneAccessFragment"
+        android:name="dev.azertim.orange_toolbox.ui.reseau.oneaccess.OneaccessCommandsFragment"
+        android:label="@string/outil_oneAccess"
+        tools:layout="@layout/fragment_oneaccess"/>
+
+
+    <!--  Telecom   -->
+    <fragment
+        android:id="@+id/attenuationfibreFragment"
+        android:name="dev.azertim.orange_toolbox.ui.telecom.attenuationfibre.AttenuationFibreFragment"
+        android:label="@string/outil_oneAccess"
+        tools:layout="@layout/fragment_oneaccess"/>
+
+    <fragment
+        android:id="@+id/attenuationcuivreFragment"
+        android:name="dev.azertim.orange_toolbox.ui.telecom.attenuationcuivre.AttenuationCuivreFragment"
+        android:label="@string/outil_cuivreatt"
+        tools:layout="@layout/fragment_attenuation_cuivre"/>
+
+    <fragment
+        android:id="@+id/megohmFragment"
+        android:name="dev.azertim.orange_toolbox.ui.telecom.megohm.MegohmFragment"
+        android:label="@string/outil_megohm"
+        tools:layout="@layout/fragment_megohm"/>
+
+    <fragment
+        android:id="@+id/trouverpaireFragment"
+        android:name="dev.azertim.orange_toolbox.ui.telecom.trouverpaire.TrouverPaireFragment"
+        android:label="@string/outil_trouverpaire"
+        tools:layout="@layout/fragment_trouverpaire"/>
+
+    <fragment
+        android:id="@+id/rdegFragment"
+        android:name="dev.azertim.orange_toolbox.ui.telecom.rdeg.RdegFragment"
+        android:label="@string/outil_rdeg"
+        tools:layout="@layout/fragment_rdeg"/>
+
+    <!--  Memos   -->
+
+    <fragment
+        android:id="@+id/cuivrecolorFragment"
+        android:name="dev.azertim.orange_toolbox.ui.memo.couleurscuivre.CouleursCuivreMemoFragment"
+        android:label="@string/outil_memocuivre"
+        tools:layout="@layout/fragment_couleurs_cuivre"/>
+
+    <fragment
+        android:id="@+id/fibrecolorFragment"
+        android:name="dev.azertim.orange_toolbox.ui.memo.couleursfibre.CouleursFibreMemoFragment"
+        android:label="@string/outil_memofibre"
+        tools:layout="@layout/fragment_couleurs_fibre"/>
+
+
+</navigation>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

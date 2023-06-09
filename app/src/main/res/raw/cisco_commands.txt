@@ -1,0 +1,39 @@
+    show ip interface brief : Affiche un résumé des interfaces IP et leur état.
+
+    show interfaces : Affiche les détails des interfaces, y compris les statistiques d'erreurs.
+
+    show ip route : Affiche la table de routage IP.
+
+    show arp : Affiche la table ARP, qui associe les adresses IP aux adresses MAC.
+
+    show version : Affiche les informations sur le matériel et le logiciel du routeur.
+
+    show running-config : Affiche la configuration en cours du routeur.
+
+    show startup-config : Affiche la configuration sauvegardée dans la mémoire de démarrage.
+
+    show logging : Affiche les messages de journalisation du routeur.
+
+    show access-lists : Affiche les listes d'accès configurées sur le routeur.
+
+    show ip nat translations : Affiche les traductions NAT en cours.
+
+    show ip nat statistics : Affiche les statistiques de translation NAT.
+
+    show ip ospf neighbor : Affiche les voisins OSPF (Open Shortest Path First).
+
+    show ip bgp summary : Affiche un résumé des informations BGP (Border Gateway Protocol).
+
+    show ip dhcp binding : Affiche les liaisons DHCP actives.
+
+    show ip dhcp pool : Affiche les pools DHCP configurés sur le routeur.
+
+    show ip route ospf : Affiche la table de routage OSPF.
+
+    show ip route bgp : Affiche la table de routage BGP.
+
+    show standby : Affiche les groupes HSRP (Hot Standby Router Protocol) configurés.
+
+    show interfaces trunk : Affiche les interfaces en mode trunk et les VLAN autorisés.
+
+    debug <debug-command> : Active le débogage pour une commande spécifique, par exemple debug ip packet.
