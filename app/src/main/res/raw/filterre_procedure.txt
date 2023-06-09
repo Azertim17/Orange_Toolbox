@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <link rel="stylesheet" type="text/css" href="file:///android_asset/style.css">
 
 <body>
@@ -51,3 +52,36 @@
 <body>
     <p>Fin des mesures, si tout est ok vous pouvez continuer.</p>
 </body>
+=======
+<center>
+<p><b>Raccordez une broche sur un fil et l'autre à la terre</b></p>
+</center>
+-----
+<center>
+<p><b>Vérification absence de Terre</b></p>
+<p>Mettre le Mégohmmètre sur le mode résistance <b>"Ω"</b></p>
+<p>Résultat Attendu : Si pas de terre sur le fil, l'appareil doit afficher 100 kΩ</p>
+</center>
+-----
+<center>
+<p><b>Distance du fil 1</b></p>
+<p>Mettre le Mégohmmètre sur le mode capacité <b>"nF"</b></p>
+<p>Résultat Attendu : L'appreil affiche une valeur de capacité correspondant à une distance</p>
+</center>
+-----
+<center>
+<p><b>Vérification Distance fil 2</b></p>
+<p>Mettre le Mégohmmètre sur le mode capacité <b>"nF"</b></p>
+<p>Résultat Attendu : Même distance que pour le fil 1</p>
+</center>
+-----
+<center>
+<p><b>Envoi de Tension sur la ligne</b></p>
+<p>Mettre le Mégohmmètre sur le mode envoi de tension <b>"MΩ"</b> (50V)</p>
+<p>Résultat Attendu : Si la ligne est bonne, ...</p>
+</center>
+-----
+<center>
+<p>Fin des mesures, si tout est ok vous pouvez continuer.</p>
+</center>
+>>>>>>> 7d9be275a5a430900132a724777e8b203447a603

@@ -21,7 +21,11 @@
         android:layout_marginBottom="16dp" />
 
     <LinearLayout
+<<<<<<< HEAD
         android:layout_width="wrap_content"
+=======
+        android:layout_width="match_parent"
+>>>>>>> 7d9be275a5a430900132a724777e8b203447a603
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="10dp"

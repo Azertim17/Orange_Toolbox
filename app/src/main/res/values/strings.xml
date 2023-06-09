@@ -5,7 +5,11 @@
     <string name="nav_header_title">Orange Toolbox</string>
     <string name="nav_header_subtitle">tim.mazzolini@orange.fr</string>
     <string name="nav_header_desc">Navigation header</string>
+<<<<<<< HEAD
     <string name="action_apropos">À Propos</string>
+=======
+    <string name="action_settings">Settings</string>
+>>>>>>> 7d9be275a5a430900132a724777e8b203447a603
 
 
     <!-- Menus -->
@@ -30,6 +34,7 @@
     <string name="outil_memofibre">Mémo Couleurs Fibre</string>
 
 
+<<<<<<< HEAD
     <!-- A Propos -->
     <string name="auteur">Tim MAZZOLINI</string>
     <string name="version">2.0.0</string>
@@ -38,5 +43,7 @@
 
     <string name="signature">© Tim.M 2022</string>
 
+=======
+>>>>>>> 7d9be275a5a430900132a724777e8b203447a603
 
 </resources>

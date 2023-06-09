@@ -33,8 +33,13 @@ public class MemoFragment extends Fragment {
 
 //      COULEURS CUIVRE
 //      Récupère le layout couleurs cuivre et lui associe une action onclick
+<<<<<<< HEAD
         LinearLayout couleurscuivreLayout = root.findViewById(R.id.couleurscuivreLayout);
         couleurscuivreLayout.setOnClickListener(new View.OnClickListener() {
+=======
+        LinearLayout attenuationfibreLayout = root.findViewById(R.id.couleurscuivreLayout);
+        attenuationfibreLayout.setOnClickListener(new View.OnClickListener() {
+>>>>>>> 7d9be275a5a430900132a724777e8b203447a603
             // Met a jour le fragment main avec la vue du mémo couleurs cuivre
             @Override
             public void onClick(View view) {
@@ -44,6 +49,7 @@ public class MemoFragment extends Fragment {
         });
 
 
+<<<<<<< HEAD
 //      COULEURS FIBRE
 //      Récupère le layout couleurs fibre et lui associe une action onclick
         LinearLayout couleursfibreLayout = root.findViewById(R.id.couleursfibreLayout);
@@ -57,6 +63,8 @@ public class MemoFragment extends Fragment {
         });
 
 
+=======
+>>>>>>> 7d9be275a5a430900132a724777e8b203447a603
 
 
 

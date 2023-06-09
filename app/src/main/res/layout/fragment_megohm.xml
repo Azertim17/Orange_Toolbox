@@ -56,14 +56,20 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
+<<<<<<< HEAD
         android:layout_marginTop="35dp"
         android:layout_weight="70">
+=======
+        android:layout_weight="70"
+        android:layout_marginTop="35dp">
+>>>>>>> 7d9be275a5a430900132a724777e8b203447a603
 
         <WebView
             android:id="@+id/webViewProcedure"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_above="@+id/linearButtons"
+<<<<<<< HEAD
             android:layout_marginLeft="10dp"
             android:layout_marginTop="40dp"
             android:layout_marginRight="10dp"
@@ -72,13 +78,27 @@
             android:gravity="center_horizontal"
             android:foregroundGravity="center"
             tools:ignore="WebViewLayout" />
+=======
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_horizontal"
+            tools:ignore="WebViewLayout"
+            android:background="?attr/colorPrimary"/>
+>>>>>>> 7d9be275a5a430900132a724777e8b203447a603
 
         <LinearLayout
             android:id="@+id/linearButtons"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+<<<<<<< HEAD
             android:layout_alignParentBottom="true"
             android:gravity="center">
+=======
+            android:gravity="center"
+            android:layout_alignParentBottom="true">
+>>>>>>> 7d9be275a5a430900132a724777e8b203447a603
 
             <Button
                 android:id="@+id/btnPreviousProcedure"
@@ -86,7 +106,11 @@
                 android:layout_height="wrap_content"
                 android:drawableLeft="@drawable/arrow_return"
                 android:src="@drawable/arrow_return"
+<<<<<<< HEAD
                 android:visibility="gone" />
+=======
+                android:visibility="gone"/>
+>>>>>>> 7d9be275a5a430900132a724777e8b203447a603
 
             <Button
                 android:id="@+id/btnNextProcedure"
@@ -95,7 +119,11 @@
                 android:layout_marginStart="15dp"
                 android:drawableRight="@drawable/arrow_continue"
                 android:src="@drawable/arrow_continue"
+<<<<<<< HEAD
                 android:visibility="gone" />
+=======
+                android:visibility="gone"/>
+>>>>>>> 7d9be275a5a430900132a724777e8b203447a603
         </LinearLayout>
     </RelativeLayout>
 

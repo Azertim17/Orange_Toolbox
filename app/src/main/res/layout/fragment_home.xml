@@ -74,8 +74,11 @@
             android:layout_height="200dp"
             android:scaleType="fitXY" />
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 7d9be275a5a430900132a724777e8b203447a603
         <ImageView
             android:id="@+id/image2"
             android:layout_width="match_parent"

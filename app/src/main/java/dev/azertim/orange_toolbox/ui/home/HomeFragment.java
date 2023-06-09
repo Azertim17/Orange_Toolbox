@@ -39,11 +39,19 @@ HomeFragment extends Fragment implements WeatherData.WeatherDataCallback {
         ImageView image5 = root.findViewById(R.id.image5);
 
         // Set the images for the ImageView objects
+<<<<<<< HEAD
 //        image1.setImageResource(R.drawable.home);
 //        image2.setImageResource(R.drawable.home);
 //        image3.setImageResource(R.drawable.home);
 //        image4.setImageResource(R.drawable.home);
 //        image5.setImageResource(R.drawable.home);
+=======
+        image1.setImageResource(R.drawable.home);
+        image2.setImageResource(R.drawable.home);
+        image3.setImageResource(R.drawable.home);
+        image4.setImageResource(R.drawable.home);
+        image5.setImageResource(R.drawable.home);
+>>>>>>> 7d9be275a5a430900132a724777e8b203447a603
 
         WeatherData weatherData = new WeatherData();
         temperatureTextView = root.findViewById(R.id.temperatureTextView);

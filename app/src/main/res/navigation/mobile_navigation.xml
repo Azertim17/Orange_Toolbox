@@ -96,12 +96,15 @@
         android:label="@string/outil_memocuivre"
         tools:layout="@layout/fragment_couleurs_cuivre"/>
 
+<<<<<<< HEAD
     <fragment
         android:id="@+id/fibrecolorFragment"
         android:name="dev.azertim.orange_toolbox.ui.memo.couleursfibre.CouleursFibreMemoFragment"
         android:label="@string/outil_memofibre"
         tools:layout="@layout/fragment_couleurs_fibre"/>
 
+=======
+>>>>>>> 7d9be275a5a430900132a724777e8b203447a603
 
 </navigation>
 

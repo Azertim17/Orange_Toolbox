@@ -26,8 +26,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity android:name="dev.azertim.orange_toolbox.AProposActivity"
             tools:ignore="Instantiatable" />
+=======
+>>>>>>> 7d9be275a5a430900132a724777e8b203447a603
     </application>
 
 </manifest>

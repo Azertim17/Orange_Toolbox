@@ -2,8 +2,11 @@ package dev.azertim.orange_toolbox.ui.telecom.megohm;
 
 import android.annotation.SuppressLint;
 import android.content.res.Resources;
+<<<<<<< HEAD
 import android.content.res.TypedArray;
 import android.graphics.Color;
+=======
+>>>>>>> 7d9be275a5a430900132a724777e8b203447a603
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.text.Html;
@@ -97,7 +100,10 @@ public class MegohmFragment extends Fragment {
         });
     }
 
+<<<<<<< HEAD
     @SuppressLint("ResourceAsColor")
+=======
+>>>>>>> 7d9be275a5a430900132a724777e8b203447a603
     private void parseProcedureFileEntrefils() {
         try {
             InputStream inputStream = getResources().openRawResource(R.raw.entrefils_procedure);
@@ -115,6 +121,7 @@ public class MegohmFragment extends Fragment {
             String currentProcedure = procedurePages[currentPageIndex];
 
             // Charger le contenu HTML dans le WebView
+<<<<<<< HEAD
             String htmlContent = "<html><head><link rel=\"stylesheet\" type=\"text/css\" href=\"file:///android_asset/styles.css\"></head><body>" + currentProcedure + "</body></html>";
             webViewProcedure.loadDataWithBaseURL(null, htmlContent, "text/html", "UTF-8", null);
 
@@ -124,6 +131,9 @@ public class MegohmFragment extends Fragment {
 
 
 
+=======
+            webViewProcedure.loadDataWithBaseURL(null, currentProcedure, "text/html", "UTF-8", null);
+>>>>>>> 7d9be275a5a430900132a724777e8b203447a603
 
             updateProcedurePage(); // Mettre à jour l'affichage de la page de procédure
         } catch (IOException e) {
@@ -132,7 +142,10 @@ public class MegohmFragment extends Fragment {
     }
 
 
+<<<<<<< HEAD
     @SuppressLint("ResourceAsColor")
+=======
+>>>>>>> 7d9be275a5a430900132a724777e8b203447a603
     private void parseProcedureFileFilTerre() {
         try {
             InputStream inputStream = getResources().openRawResource(R.raw.filterre_procedure);
@@ -150,11 +163,15 @@ public class MegohmFragment extends Fragment {
             String currentProcedure = procedurePages[currentPageIndex];
 
             // Charger le contenu HTML dans le WebView
+<<<<<<< HEAD
             String htmlContent = "<html><head><link rel=\"stylesheet\" type=\"text/css\" href=\"file:///android_asset/styles.css\"></head><body>" + currentProcedure + "</body></html>";
             webViewProcedure.loadDataWithBaseURL(null, htmlContent, "text/html", "UTF-8", null);
 
 
             webViewProcedure.setBackgroundColor(android.R.color.transparent);
+=======
+            webViewProcedure.loadDataWithBaseURL(null, currentProcedure, "text/html", "UTF-8", null);
+>>>>>>> 7d9be275a5a430900132a724777e8b203447a603
 
             updateProcedurePage(); // Mettre à jour l'affichage de la page de procédure
         } catch (IOException e) {
